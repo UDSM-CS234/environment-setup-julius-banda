@@ -1,14 +1,20 @@
 package com.company;
 
-public class Main {
+public class Main{
+    public static void main(String args[]){
+        double ac;
+        double ti;
+        double iv;
+        double ip;
+        double fp;
 
-    public static void main(String[] args) {
-        double gravity = -9.81; // Earth's gravity in m/s^2
-        double initialVelocity = 0.0;
-        double fallingTime = 10.0;
-        double initialPosition = 0.0;
-        double finalPosition = 0.0;
-        System.out.println("The object's position after " + fallingTime +
-                " seconds is " + finalPosition + " m.");
+        ac = -9.81;
+        ti = 10;
+        iv = 0;
+        ip = 0;
+        fp = 0.5 * ac * Math.pow(ti,2) + iv * ti + iv;
+
+        System.out.println("The position will now be: " +fp);
+
     }
 }
